@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+    <title>Triqui</title>
+</head>
+<body>
+    <!--First, i need to create a container to make a board and also give it an id so i can call it in Js-->
+    <div class="board" id="board"> <!--Now, that i have my board container i need 9 cells for each position  #-->
+        <div class="cell" data-cell></div> <!--Data attribute-->
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--, el atributo data-cell se utiliza para almacenar información personalizada relacionada con un elemento HTML, y puedes acceder a esa información utilizando JavaScript cuando sea necesario.-->
+
+    </div> <!--now i'm going to create a message to say who is the winner-->
+    <div class="winning--message" id="winnningMessage">
+        <div data-winning-message-text></div>
+        <button id="restartButton">Restart</button>
+    </div>
+</body>
+</html>
